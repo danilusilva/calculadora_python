@@ -1,5 +1,6 @@
 # app/viacep.py
 import requests
+from fastapi import HTTPException
 
 def buscar_cep(cep: str):
     url = f"https://viacep.com.br/ws/{cep}/json/"
